@@ -4,10 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,reset;
+
     int turn;
 
 
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        reset = findViewById(R.id.reset);
          b1 =  findViewById(R.id.b1);
          b2 =  findViewById(R.id.b2);
          b3 =  findViewById(R.id.b3);
@@ -27,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
          b9 =  findViewById(R.id.b9);
 
          turn = 1;
+
+//         click listeners for all buttons
 
          b1.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
                  }
                  endGame();
+
              }
          });
 
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 endGame();
 
+
             }
         });
 
@@ -80,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
@@ -98,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
@@ -116,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
@@ -134,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
@@ -152,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
@@ -170,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
@@ -188,10 +201,15 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 endGame();
+
             }
         });
 
+
+
     }
+
+//    endgame method when three consecutive squares have same symbol and disable remaining squares when game is won
     public void endGame(){
         String a,b,c,d,e,f,g,h,i;
 
@@ -211,69 +229,85 @@ public class MainActivity extends AppCompatActivity {
         if (a.equals(b) && a.equals(c) && a.equals("X")&& b.equals("X")&& c.equals("X")){
             disable=true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (a.equals(d) && a.equals(g) && a.equals("X") && d.equals("X")&& g.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (a.equals(e) && a.equals(i) && a.equals("X") && e.equals("X") && i.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (b.equals(e) && b.equals(h) && b.equals("X") && e.equals("X") && h.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (c.equals(f) && c.equals(i) && c.equals("X") && f.equals("X") && i.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (c.equals(e) && c.equals(g) && c.equals("X") && e.equals("X") && g.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (g.equals(h) && g.equals(i) && g.equals("X") && h.equals("X") && i.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (d.equals(e) && d.equals(f) && d.equals("X") && e.equals("X") && f.equals("X")){
             disable = true;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
+
         }
 
         //if player O wins
 
-        if (a.equals(b) && a.equals(c) && a.equals("O")){
+        if (a.equals(b) && a.equals(c) && a.equals("O") && b.equals("O") && c.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
-        if (a.equals(d) && a.equals(g) && a.equals("O")){
+        if (a.equals(d) && a.equals(g) && a.equals("O") && d.equals("O") && g.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
-        if (a.equals(e) && a.equals(i) && a.equals("O")){
+        if (a.equals(e) && a.equals(i) && a.equals("O") && e.equals("O") && i.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
-        if (b.equals(e) && b.equals(h) && a.equals("O")){
+        if (b.equals(e) && b.equals(h) && b.equals("O") && e.equals("O") && h.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
         if (c.equals(f) && c.equals(i) && c.equals("O") && f.equals("O") && i.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
-        if (c.equals(e) && c.equals(g) && a.equals("O")){
+        if (c.equals(e) && c.equals(g) && c.equals("O") && e.equals("O") && g.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
-        if (g.equals(h) && g.equals(i) && a.equals("O")){
+        if (g.equals(h) && g.equals(i) && g.equals("O") && h.equals("O") && i.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
-        if (d.equals(e) && d.equals(f) && a.equals("O")){
+        if (d.equals(e) && d.equals(f) && d.equals("O") && e.equals("O") && f.equals("O")){
             disable = true;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
+
         }
 
         if (disable) {
@@ -289,5 +323,46 @@ public class MainActivity extends AppCompatActivity {
             b9.setEnabled(false);
         }
 
+
+
+
     }
+
+//    method to reset game on click of reset game button and enable all square
+
+    public void reset(View v ){
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                b1.setText("");
+                b2.setText("");
+                b3.setText("");
+                b4.setText("");
+                b5.setText("");
+                b6.setText("");
+                b7.setText("");
+                b8.setText("");
+                b9.setText("");
+
+
+                b1.setEnabled(true);
+                b2.setEnabled(true);
+                b3.setEnabled(true);
+                b4.setEnabled(true);
+                b5.setEnabled(true);
+                b6.setEnabled(true);
+                b7.setEnabled(true);
+                b8.setEnabled(true);
+                b9.setEnabled(true);
+            }
+
+
+
+        });
+
+
+    }
+
+
 }
