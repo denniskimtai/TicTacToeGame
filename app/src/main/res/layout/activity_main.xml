@@ -10,15 +10,21 @@
     android:weightSum="5">
 
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_weight="1"
             >
 
             <TextView
+                android:id="@+id/player1score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Player 1: 0"
@@ -26,10 +32,31 @@
                 android:textSize="30dp"/>
 
             <TextView
+                android:id="@+id/player2score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Player 1: 0"
+                android:text="Player 2: 0"
                 android:textSize="30dp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/newGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="new game"
+                    android:textSize="20sp"
+                    android:background="#23cc05"
+                    android:onClick="newGameButton"/>
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
 
@@ -48,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#8ac3df"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_weight="1"/>
 
         <Button
@@ -59,7 +86,7 @@
             android:layout_marginTop="5dp"
             android:background="#8ac3df"
             android:layout_height="match_parent"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_weight="1"/>
 
         <Button
@@ -69,7 +96,7 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:background="#8ac3df"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
@@ -84,7 +111,7 @@
 
         <Button
             android:id="@+id/b4"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
@@ -95,7 +122,7 @@
 
         <Button
             android:id="@+id/b5"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:background="#8ac3df"
@@ -105,7 +132,7 @@
 
         <Button
             android:id="@+id/b6"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:background="#8ac3df"
@@ -130,7 +157,7 @@
             android:layout_width="wrap_content"
             android:background="#8ac3df"
             android:layout_height="match_parent"
-           android:textSize="72dp"
+           android:textSize="60sp"
             android:layout_weight="1"/>
 
         <Button
@@ -138,7 +165,7 @@
             android:background="#8ac3df"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -148,7 +175,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:background="#8ac3df"
-            android:textSize="72dp"
+            android:textSize="60sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
