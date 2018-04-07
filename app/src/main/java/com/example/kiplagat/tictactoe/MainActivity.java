@@ -1,15 +1,18 @@
 package com.example.kiplagat.tictactoe;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,reset,newgame;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,reset;
     TextView player1score,player2score;
     int scoreCount = 0;
     int scoreCount2 = 0;
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
          b7 =  findViewById(R.id.b7);
          b8 =  findViewById(R.id.b8);
          b9 =  findViewById(R.id.b9);
-         newgame= findViewById(R.id.newGame);
+
 
          turn = 1;
 
@@ -214,14 +217,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
     }
 
 //    endgame method when three consecutive squares have same symbol and disable remaining squares when game is won
     public void endGame(){
         String a,b,c,d,e,f,g,h,i;
-
-        boolean disable = false;
 
 
         a = b1.getText().toString();
@@ -235,81 +235,81 @@ public class MainActivity extends AppCompatActivity {
         i = b9.getText().toString();
 
         if (a.equals(b) && a.equals(c) && a.equals("X")&& b.equals("X")&& c.equals("X")){
-            disable=true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (a.equals(d) && a.equals(g) && a.equals("X") && d.equals("X")&& g.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (a.equals(e) && a.equals(i) && a.equals("X") && e.equals("X") && i.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (b.equals(e) && b.equals(h) && b.equals("X") && e.equals("X") && h.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (c.equals(f) && c.equals(i) && c.equals("X") && f.equals("X") && i.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (c.equals(e) && c.equals(g) && c.equals("X") && e.equals("X") && g.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (g.equals(h) && g.equals(i) && g.equals("X") && h.equals("X") && i.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (d.equals(e) && d.equals(f) && d.equals("X") && e.equals("X") && f.equals("X")){
-            disable = true;
             scoreCount++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player X wins!!", Toast.LENGTH_SHORT).show();
 
@@ -318,139 +318,113 @@ public class MainActivity extends AppCompatActivity {
         //if player O wins
 
         if (a.equals(b) && a.equals(c) && a.equals("O") && b.equals("O") && c.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (a.equals(d) && a.equals(g) && a.equals("O") && d.equals("O") && g.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (a.equals(e) && a.equals(i) && a.equals("O") && e.equals("O") && i.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (b.equals(e) && b.equals(h) && b.equals("O") && e.equals("O") && h.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (c.equals(f) && c.equals(i) && c.equals("O") && f.equals("O") && i.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (c.equals(e) && c.equals(g) && c.equals("O") && e.equals("O") && g.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (g.equals(h) && g.equals(i) && g.equals("O") && h.equals("O") && i.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
         if (d.equals(e) && d.equals(f) && d.equals("O") && e.equals("O") && f.equals("O")){
-            disable = true;
             scoreCount2++;
             round++;
             updateScore();
             newGame();
+            clearBoard();
             turn = 1;
             Toast.makeText(this, "Player O wins!!", Toast.LENGTH_SHORT).show();
 
         }
 
-
-        if (disable) {
-
-            b1.setEnabled(false);
-            b2.setEnabled(false);
-            b3.setEnabled(false);
-            b4.setEnabled(false);
-            b5.setEnabled(false);
-            b6.setEnabled(false);
-            b7.setEnabled(false);
-            b8.setEnabled(false);
-            b9.setEnabled(false);
-        }
-
-
-
-
     }
 
 //    method to reset game on click of reset game button and enable all square
 
-    public void reset(View v ){
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                b1.setText("");
-                b2.setText("");
-                b3.setText("");
-                b4.setText("");
-                b5.setText("");
-                b6.setText("");
-                b7.setText("");
-                b8.setText("");
-                b9.setText("");
+    public void clearBoard(){
+
+        b1.setText("");
+        b2.setText("");
+        b3.setText("");
+        b4.setText("");
+        b5.setText("");
+        b6.setText("");
+        b7.setText("");
+        b8.setText("");
+        b9.setText("");
 
 
-                b1.setEnabled(true);
-                b2.setEnabled(true);
-                b3.setEnabled(true);
-                b4.setEnabled(true);
-                b5.setEnabled(true);
-                b6.setEnabled(true);
-                b7.setEnabled(true);
-                b8.setEnabled(true);
-                b9.setEnabled(true);
-            }
-
-
-
-        });
-
-
+        b1.setEnabled(true);
+        b2.setEnabled(true);
+        b3.setEnabled(true);
+        b4.setEnabled(true);
+        b5.setEnabled(true);
+        b6.setEnabled(true);
+        b7.setEnabled(true);
+        b8.setEnabled(true);
+        b9.setEnabled(true);
     }
 
 //    Update score method
@@ -564,32 +538,53 @@ public class MainActivity extends AppCompatActivity {
             scoreCount2 = 0;
 
         }
-                }
+    }
 
-//                onclick listener for new game button
-    public void newGameButton(View v){
+    public void reset(View v ){
+        b1.setText("");
+        b2.setText("");
+        b3.setText("");
+        b4.setText("");
+        b5.setText("");
+        b6.setText("");
+        b7.setText("");
+        b8.setText("");
+        b9.setText("");
 
-        newgame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                b1.setEnabled(true);
-                b2.setEnabled(true);
-                b3.setEnabled(true);
-                b4.setEnabled(true);
-                b5.setEnabled(true);
-                b6.setEnabled(true);
-                b7.setEnabled(true);
-                b8.setEnabled(true);
-                b9.setEnabled(true);
-                reset.setEnabled(true);
+        b1.setEnabled(true);
+        b2.setEnabled(true);
+        b3.setEnabled(true);
+        b4.setEnabled(true);
+        b5.setEnabled(true);
+        b6.setEnabled(true);
+        b7.setEnabled(true);
+        b8.setEnabled(true);
+        b9.setEnabled(true);
 
-                player1score.setText("Player 1:0");
-                player2score.setText("Player 2:0");
-            }
-        });
+        player1score.setText("Player 1: 0");
+        player2score.setText("Player 2: 0");
     }
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == R.id.easy){
+            Intent i = new Intent(this,MainActivity.class);
+            startActivity(i);
+        } else if (item.getItemId() == R.id.hard){
+
+            Intent intent = new Intent(this,Activity5by5.class);
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -40,23 +40,6 @@
                 android:textSize="30dp"/>
         </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-
-                <Button
-                    android:id="@+id/newGame"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="new game"
-                    android:textSize="20sp"
-                    android:background="#23cc05"
-                    android:onClick="newGameButton"/>
-
-            </LinearLayout>
-
 
         </LinearLayout>
 
@@ -196,8 +179,8 @@
             android:background="#a90000"
             android:text="reset game"
             android:textColor="#f7f4f4"
-            android:onClick="reset"
             android:textSize="24dp"
+            android:onClick="reset"
             android:textAlignment="center"
             android:layout_margin="10dp"
             />
