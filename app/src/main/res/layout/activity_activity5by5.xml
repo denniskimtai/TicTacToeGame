@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_margin="10dp"
+    android:background="#E3F2FD"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="7"
@@ -22,7 +22,7 @@
             android:id="@+id/scores1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Player 1: 0;"
+            android:text="Player 1: 0"
             android:textSize="30sp"
             />
 
@@ -30,7 +30,7 @@
             android:id="@+id/scores2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Player 2: 0;"
+            android:text="Player 2: 0"
             android:textSize="30sp"
             />
 
@@ -46,30 +46,44 @@
         <Button
             android:id="@+id/btn00"
             android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn01"
+            android:layout_margin="5dp"
+            android:textSize="35sp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn02"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn03"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn04"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -86,30 +100,45 @@
 
         <Button
             android:id="@+id/btn10"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn11"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn12"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn13"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn14"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -126,30 +155,45 @@
 
         <Button
             android:id="@+id/btn20"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn21"
+            android:textSize="35sp"
+            android:layout_margin="2dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn22"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn23"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn24"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -166,30 +210,45 @@
 
         <Button
             android:id="@+id/btn30"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn31"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn32"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:background="#64B5F6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn33"
+            android:textSize="35sp"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn34"
+            android:textSize="35sp"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -206,6 +265,8 @@
 
         <Button
             android:id="@+id/btn40"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:textSize="35sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -213,24 +274,36 @@
 
         <Button
             android:id="@+id/btn41"
+            android:textSize="35sp"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn42"
+            android:textSize="35sp"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn43"
+            android:textSize="35sp"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn44"
+            android:textSize="35sp"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -241,6 +314,8 @@
     <Button
         android:id="@+id/reset2"
         android:textSize="30sp"
+        android:textColor="#E8EAF6"
+        android:background="#a90000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="reset"

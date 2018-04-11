@@ -440,7 +440,7 @@ public class MainActivity extends AppCompatActivity {
 
 //if player one has highest scores
         if (round == 3 && scoreCount > scoreCount2){
-            Toast player1Wins = Toast.makeText(this, "PLAYER 1 WINS BY  "  + scoreCount + " GAMES. CLICK NEW GAME TO PLAY AGAIN", Toast.LENGTH_LONG);
+            Toast player1Wins = Toast.makeText(this, "PLAYER 1 WINS BY  "  + scoreCount + " GAMES.", Toast.LENGTH_LONG);
             player1Wins.setGravity(Gravity.CENTER,0,0);
             player1Wins.show();
 
@@ -475,7 +475,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        if player 2 has the highest score
         if (round == 3 && scoreCount2>scoreCount){
-            Toast player2Wins = Toast.makeText(this,"PLAYER 2 WINS BY  "  + scoreCount2 + " GAMES. CLICK NEW GAME TO PLAY AGAIN" , Toast.LENGTH_LONG);
+            Toast player2Wins = Toast.makeText(this,"PLAYER 2 WINS BY  "  + scoreCount2 + " GAMES." , Toast.LENGTH_LONG);
             player2Wins.setGravity(Gravity.CENTER,0,0);
             player2Wins.show();
 

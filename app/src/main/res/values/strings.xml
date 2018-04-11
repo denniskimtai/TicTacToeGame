@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">TIC TAC TOE</string>
+    <string name="app_name">XOXO</string>
     <string name="easy">EASY</string>
     <string name="hard">HARD</string>
-    <string name="help">HELP</string>
 </resources>

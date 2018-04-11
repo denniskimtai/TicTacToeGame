@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_margin="10dp"
     android:layout_width="match_parent"
-    android:background="#abd6f7fc"
+    android:background="#E3F2FD"
     android:layout_height="match_parent"
     tools:context="com.example.kiplagat.tictactoe.MainActivity"
     android:weightSum="5">
@@ -55,10 +54,10 @@
 
         <Button
             android:id="@+id/b1"
-            android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
+            android:layout_margin="5dp"
             android:textSize="60sp"
             android:layout_weight="1"/>
 
@@ -68,7 +67,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:layout_height="match_parent"
             android:textSize="60sp"
             android:layout_weight="1"/>
@@ -79,7 +78,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:textSize="60sp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -99,7 +98,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -109,7 +108,7 @@
             android:textSize="60sp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -119,7 +118,7 @@
             android:textSize="60sp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -139,14 +138,14 @@
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
             android:layout_width="wrap_content"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:layout_height="match_parent"
            android:textSize="60sp"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/b8"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:textSize="60sp"
@@ -158,7 +157,7 @@
             android:id="@+id/b9"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:background="#8ac3df"
+            android:background="#64B5F6"
             android:textSize="60sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

@@ -10,8 +10,5 @@
         android:title="@string/hard"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/help"
-        android:title="@string/help"
-        app:showAsAction="never"/>
 
 </menu>
